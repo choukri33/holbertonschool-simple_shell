@@ -8,7 +8,6 @@
 #include <sys/types.h>
 #include <sys/wait.h>
 
-
-void prompt(void);
+int main(int ac, char **argv);
 
 #endif
