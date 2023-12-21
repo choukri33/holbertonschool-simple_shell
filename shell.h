@@ -9,5 +9,6 @@
 #include <sys/wait.h>
 
 int main(int ac, char **argv);
+char *strtok(char *str, const char *delim);
 
 #endif
