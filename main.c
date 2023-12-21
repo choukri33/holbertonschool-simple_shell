@@ -31,7 +31,6 @@ int main(int ac, char **argv)
         }
 
         printf("%s\n", lineptr);
-
         free(lineptr);  
     }
     return (0);

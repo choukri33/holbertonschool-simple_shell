@@ -46,6 +46,9 @@ char **strtok_custom(char *str, const char *delim)
         token = strtok(NULL, delim);
     }
     argv[i] = NULL;
+
+    execshell(argv);
+
     free(str_copy);
 
     return (argv);
