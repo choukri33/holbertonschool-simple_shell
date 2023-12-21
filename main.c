@@ -16,11 +16,18 @@ int main(int ac, char **argv)
 
     while (1){
         printf("%s", prompt);
-        nchars_read = getline(&lineptr, &n, stdin);
         
+        lineptr = (char *)malloc(sizeof(char) * n);
+        if (lineptr == NULL){
+            perror("Error allocating memory");
+            exit(EXIT_FAILURE);
+        }
+        nchars_read = getline(&lineptr, &n, stdin);
+
         if (nchars_read == -1){
             printf("Exit shell\n");
-            return (-1);
+            free(lineptr);
+            exit(EXIT_SUCCESS);
         }
 
         printf("%s\n", lineptr);
