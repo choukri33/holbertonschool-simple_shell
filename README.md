@@ -2,6 +2,10 @@
 
 Write a simple UNIX command interpreter in C.
 
+<picture>
+<img src ="https://github.com/choukri33/holbertonschool-simple_shell/blob/main/holberton-logo.png"></img>
+</picture>
+
 #### **Team and Tasks**
 
 This project was carried out by two students, <a href = "https://github.com/MadMartigan3">Gabriel Milana </a> and <a href = "https://github.com/choukri33">Choukri Abou-Khadija.</a>
