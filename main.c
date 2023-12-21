@@ -6,6 +6,7 @@
 
 int main(int ac, char **argv)
 {
+    char **args = NULL;
     char *prompt = "$ ";
     char *lineptr;
     size_t n = 0;
@@ -24,13 +25,14 @@ int main(int ac, char **argv)
         }
         nchars_read = getline(&lineptr, &n, stdin);
 
-        if (nchars_read == -1){
-            printf("Exit shell\n");
+        if (nchars_read == -1)
+        {
             free(lineptr);
             exit(EXIT_SUCCESS);
         }
-
-        printf("%s\n", lineptr);
+        lineptr[nchars_read - 1] = '\0';
+        args = strtok_custom(lineptr, " ");
+        execshell(args);
         free(lineptr);  
     }
     return (0);
