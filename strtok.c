@@ -4,43 +4,49 @@
 *
 */
 
-char **strtok(char *str, const char *delim)
+char **strtok_custom(char *str, const char *delim)
 {
     char **argv;
     int i = 0;
     int num_tokens = 0;
     char *token;
-    char *lineptr = NULL, *lineptr_copy = NULL;
-    const char *delim = " \n";
+    char *str_copy;
 
-    lineptr_copy = malloc(sizeof(char) * nchars_read);
-
-    if (lineptr_copy == NULL){
-        perror("error memory");
-        return (-1);
+    if (str == NULL || delim == NULL){
+        return NULL;
     }
 
-    strcpy(lineptr_copy, lineptr);
+    str_copy = strdup(str);
 
-    token = strtok(lineptr, delim);
+    if (str_copy == NULL){
+        perror("Error allocation memory");
+        return NULL;
+    }
+
+    token = strtok(str_copy, delim);
 
     while (token != NULL){
         num_tokens++;
         token = strtok(NULL, delim);
     }
-    num_tokens++;
 
-    argv = malloc(sizeof(char *) * num_tokens);
+    argv = malloc(sizeof(char *) * (num_tokens + 1));
 
-    token = strtok(lineptr_copy, delim);
+    if (argv == NULL){
+        perror("Error allocating memory");
+        free(str_copy);
+        return NULL;
+    }
+
+    token = strtok(str, delim);
 
     for (i = 0; token != NULL; i++){
-        argv[i] = malloc(sizeof(char) * strlen(token));
+        argv[i] = malloc(sizeof(char) * (strlen(token) + 1));
         strcpy(argv[i], token);
-
         token = strtok(NULL, delim);
     }
     argv[i] = NULL;
-    free(lineptr_copy);
-    return(array);
+    free(str_copy);
+
+    return (argv);
 }
