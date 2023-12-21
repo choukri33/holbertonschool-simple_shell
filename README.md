@@ -1,10 +1,10 @@
-###### **PROJET SIMPLE SHELL**
+<p align = "center">###### **PROJET SIMPLE SHELL**</p>
 
 Write a simple UNIX command interpreter in C.
 
 #### **Team and Tasks**
 
-This project was carried out by two students, <a href = "https://github.com/MadMartigan3">Gabriel Milana </a> and Choukri Abou-Khadija.
+This project was carried out by two students, <a href = "https://github.com/MadMartigan3">Gabriel Milana </a> and <a href = "https://github.com/choukri33">Choukri Abou-Khadija.</a>
 
 Our shell is a straightforward program that takes keyboard commands on our command prompt 
 and passes them to the system for execution.
