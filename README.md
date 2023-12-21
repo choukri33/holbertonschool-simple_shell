@@ -4,7 +4,7 @@ Write a simple UNIX command interpreter in C.
 
 #### **Team and Tasks**
 
-This project was carried out by two students, Gabriel Milan and Choukri Abou-Khadija.
+This project was carried out by two students, <a href = "https://github.com/MadMartigan3">Gabriel Milana </a> and Choukri Abou-Khadija.
 
 Our shell is a straightforward program that takes keyboard commands on our command prompt 
 and passes them to the system for execution.
@@ -14,6 +14,7 @@ and passes them to the system for execution.
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 List of Allowed Functions and System Calls
+<br>
 <b> All functions from string.h <b> 
 - access (man 2 access)
 - chdir (man 2 chdir)
