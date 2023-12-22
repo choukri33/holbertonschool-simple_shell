@@ -70,3 +70,5 @@ List of Allowed Functions and System Calls
 | man           | a man page                            |
 |path_env.c     | function that get path                |            
 
+
+![Flowchart Shell drawio](https://github.com/choukri33/holbertonschool-simple_shell/assets/105434715/fff38650-7b5e-4a19-b2a8-4b1b99b68fcb)
