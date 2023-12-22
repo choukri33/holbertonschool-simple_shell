@@ -1,6 +1,7 @@
-<p align = "center">###### **PROJET SIMPLE SHELL**</p>
+<p align = "center">###### **PROJET SIMPLE SHELL**
 
 Write a simple UNIX command interpreter in C.
+</p>
 <p align = "center">
 <picture>
 <img src ="https://github.com/choukri33/holbertonschool-simple_shell/blob/main/holberton-logo.png?raw=true">
@@ -57,3 +58,16 @@ List of Allowed Functions and System Calls
 - wait3 (man 2 wait3)
 - wait4 (man 2 wait4)
 - write (man 2 write)
+
+##### **FILES**
+
+
+| fuction       |          description                  |
+|--------:      |---------------------------------------|
+| main.c        | main function simple shell            |
+| shell.h       | Header file, contains all prototypes  |
+|strtok.c       | function for tokenise                 |
+| wait.c        | function that wait                    |
+| man           | a man page                            |
+|path_env.c     | function that get path                |            
+
