@@ -1,10 +1,11 @@
 <p align = "center">###### **PROJET SIMPLE SHELL**</p>
 
 Write a simple UNIX command interpreter in C.
-
+<p align = "center">
 <picture>
 <img src ="https://github.com/choukri33/holbertonschool-simple_shell/blob/main/holberton-logo.png?raw=true">
 </picture>
+</p>
 
 #### **Team and Tasks**
 
