@@ -7,8 +7,12 @@
 #include <string.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <sys/stat.h>
+
 
 int main(int ac, char **argv);
 char **strtok_custom(char *str, const char *delim);
 void execshell(char **argv);
+char *get_location(char *command);
+
 #endif
