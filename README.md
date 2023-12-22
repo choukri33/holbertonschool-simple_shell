@@ -1,7 +1,6 @@
-<p align = "center">###### **PROJET SIMPLE SHELL**
+<p align = "center">###### **PROJET SIMPLE SHELL**</p>
 
-Write a simple UNIX command interpreter in C.
-</p>
+<p align = "center" ><b>Write a simple UNIX command interpreter in C.</b></p>
 <p align = "center">
 <picture>
 <img src ="https://github.com/choukri33/holbertonschool-simple_shell/blob/main/holberton-logo.png?raw=true">
