@@ -16,7 +16,7 @@ and passes them to the system for execution.
 
 ###### **COMPILATION**
 
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+<u>gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh</u>
 
 List of Allowed Functions and System Calls
 <br>
