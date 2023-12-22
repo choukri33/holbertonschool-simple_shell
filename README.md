@@ -3,7 +3,7 @@
 Write a simple UNIX command interpreter in C.
 
 <picture>
-<img src ="https://github.com/choukri33/holbertonschool-simple_shell/blob/main/holberton-logo.png">
+<img src ="https://github.com/choukri33/holbertonschool-simple_shell/blob/main/holberton-logo.png?raw=true">
 </picture>
 
 #### **Team and Tasks**
